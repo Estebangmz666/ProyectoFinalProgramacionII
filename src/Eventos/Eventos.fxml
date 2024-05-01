@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EventosController">
+   <top>
+      <AnchorPane prefHeight="100.0" prefWidth="700.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="203.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenido">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <ComboBox fx:id="cbEventos" onAction="#cbEventosClicked" prefWidth="150.0" promptText="Eventos" style="-fx-background-color: #0598ff;" visibleRowCount="5" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

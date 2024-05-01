@@ -1,23 +1,26 @@
-package Login;
+package VerificacionEmail;
+
 import java.io.IOException;
 import java.lang.System.Logger.Level;
 import java.util.logging.Logger;
+
+import Login.UserLogin;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class UserLogin extends Application {
+public class VerificacionEmail extends Application{
 
     @Override
     public void start(Stage primaryStage){
         Parent root = null;
 
         try {
-            root = FXMLLoader.load(getClass().getResource("UserLogin.fxml"));
+            root = FXMLLoader.load(getClass().getResource("VerificacionEmail.fxml"));
         } catch (IOException ex){
-            Logger.getLogger(UserLogin.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(VerificacionEmail.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         Scene escena = new Scene(root);
@@ -28,4 +31,5 @@ public class UserLogin extends Application {
     public static void main (String[] args){
         launch(args);
     }
+    
 }

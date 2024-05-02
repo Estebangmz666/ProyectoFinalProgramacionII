@@ -2,6 +2,7 @@
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
@@ -10,17 +11,17 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserLoginController">
    <left>
       <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
          <children>
-            <FontAwesomeIcon fill="WHITE" glyphName="BOOK" layoutX="139.0" layoutY="225.0" size="75" text="" />
-            <Text fill="WHITE" layoutX="125.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unieventos">
+            <FontAwesomeIcon fill="WHITE" glyphName="BOOK" layoutX="140.0" layoutY="153.0" size="75" text="" />
+            <Text fill="WHITE" layoutX="126.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unieventos">
                <font>
                   <Font size="20.0" />
                </font>
             </Text>
+            <ComboBox editable="true" layoutX="100.0" layoutY="238.0" onAction="#cbEventosClicked" prefWidth="150.0" promptText="Eventos" style="-fx-background-color: #ffffff;" visibleRowCount="5" />
          </children>
       </AnchorPane>
    </left>

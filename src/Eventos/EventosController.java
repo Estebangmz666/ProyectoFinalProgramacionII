@@ -7,7 +7,7 @@ import javafx.scene.control.ComboBox;
 public class EventosController {
 
     @FXML
-    private ComboBox<?> cbEventos;
+    private ComboBox<Eventos> cbEventos;
 
     @FXML
     void cbEventosClicked(ActionEvent event) {

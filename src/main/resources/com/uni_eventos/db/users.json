@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "nombre": "",
+    "telefono": "",
+    "email": "admin@unieventos.com",
+    "contraseña": "123",
+    "esAdmin": true,
+    "comprasId": null
+  }
+]
